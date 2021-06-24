@@ -1,0 +1,144 @@
+@media screen and (max-width: 549px) {
+  .nav {
+    padding: 10px;
+  }
+  .nav-list {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 60%;
+    flex-direction: column;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: all 1s;
+    /* opacity: 0; */
+  }
+  .opentoggle {
+    opacity: 1 !important;
+    transform: translateX(0);
+  }
+
+  .nav-item {
+    display: list-item;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: left;
+    list-style: none inside;
+  }
+
+  .explore-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  .explore-item-content {
+    padding: 16px 32px 32px 32px;
+  }
+}
+
+@media screen and (min-width: 685px) {
+  .card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 16px;
+  }
+  .explore-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 10; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+}
+@media screen and (min-width: 750px) {
+  .explore-title {
+    font-size: 20px;
+  }
+
+  .explore-description {
+    font-size: 14px;
+  }
+  .menu-restaurant {
+    flex-direction: row;
+  }
+  .Foods {
+    margin-right: 10em;
+  }
+
+  .form-reviewer,
+  .customer-item {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .nav-logo h2 {
+    font-size: 28px;
+  }
+  .jumbotron-inner {
+    min-height: 600px;
+  }
+  .jumbotron-text {
+    letter-spacing: 1.5px;
+  }
+
+  .jumbotron-tittle {
+    font-size: 32px;
+  }
+  .jumbotron-tagline {
+    font-size: 32px;
+  }
+  .jumbotron-text span {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .Detail-Content {
+    flex-direction: row;
+  }
+  .content-left {
+    width: 60%;
+  }
+  .content-right {
+    padding-top: 40px;
+    padding-left: 18px;
+  }
+  .form-reviewer,
+  .customer-item {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .card-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .customer-item {
+    width: 60%;
+    padding: 15px;
+  }
+  .detail-restaurant-description {
+    width: 65%;
+  }
+  .form-reviewer {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  main,
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+}
